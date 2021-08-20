@@ -1,0 +1,291 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-20T21:58:38.188Z",
+    "end": "2021-08-20T21:58:38.204Z",
+    "duration": 16,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "614abbe1-e460-40e9-8598-e004d42e3f1e",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9584645e-fef2-40ec-bdb5-1a87192d80f7",
+          "title": "add scenarios",
+          "fullFile": "C:\\Users\\Palina_Kazlova\\Desktop\\mochaModulev2\\test\\specs\\add.spec.js",
+          "file": "\\test\\specs\\add.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"add scenarios\"",
+              "fullTitle": "add scenarios \"before each\" hook in \"add scenarios\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calculator = new Calculator();",
+              "err": {},
+              "uuid": "02e08c94-663a-4703-8db9-91a97d72ad6c",
+              "parentUUID": "9584645e-fef2-40ec-bdb5-1a87192d80f7",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"add scenarios\"",
+              "fullTitle": "add scenarios \"after each\" hook in \"add scenarios\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calculator = undefined;",
+              "err": {},
+              "uuid": "0cf6c663-9ae1-4d24-a887-6da8585e7186",
+              "parentUUID": "9584645e-fef2-40ec-bdb5-1a87192d80f7",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should return 21 as sum of 1-6",
+              "fullTitle": "add scenarios should return 21 as sum of 1-6",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(calculator.add(1, 2, 3, 4, 5, 6)).to.be.equal(21);",
+              "err": {},
+              "uuid": "855d740c-7038-4713-9343-a9e0eca26f65",
+              "parentUUID": "9584645e-fef2-40ec-bdb5-1a87192d80f7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return -21 as sum of (-6)-(-1)",
+              "fullTitle": "add scenarios should return -21 as sum of (-6)-(-1)",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(calculator.add(-1, -2, -3, -4, -5, -6)).to.be.equal(-21);",
+              "err": {},
+              "uuid": "986dc49c-f72a-4a34-9adf-8d4f55fe15e2",
+              "parentUUID": "9584645e-fef2-40ec-bdb5-1a87192d80f7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return error if any of parameters is not a number",
+              "fullTitle": "add scenarios should return error if any of parameters is not a number",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(function() {\n  calculator.add('pug', 2, 3, 4, 5, 6);\n}).to.throw('Is not array of numbers');",
+              "err": {},
+              "uuid": "67c7bad2-939c-4f45-a909-87ae6bd53a1f",
+              "parentUUID": "9584645e-fef2-40ec-bdb5-1a87192d80f7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "855d740c-7038-4713-9343-a9e0eca26f65",
+            "986dc49c-f72a-4a34-9adf-8d4f55fe15e2",
+            "67c7bad2-939c-4f45-a909-87ae6bd53a1f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "52b4aa1f-b6ba-40ea-8180-dcbca2c2e258",
+          "title": "multiply scenarios",
+          "fullFile": "C:\\Users\\Palina_Kazlova\\Desktop\\mochaModulev2\\test\\specs\\multiply.spec.js",
+          "file": "\\test\\specs\\multiply.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"multiply scenarios\"",
+              "fullTitle": "multiply scenarios \"before each\" hook in \"multiply scenarios\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calculator = new Calculator();",
+              "err": {},
+              "uuid": "5625d6e4-e319-4f2b-a498-7a7415e7f94d",
+              "parentUUID": "52b4aa1f-b6ba-40ea-8180-dcbca2c2e258",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"multiply scenarios\"",
+              "fullTitle": "multiply scenarios \"after each\" hook in \"multiply scenarios\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calculator = undefined;",
+              "err": {},
+              "uuid": "6c18aab5-21b1-492e-a30e-17e0847fe874",
+              "parentUUID": "52b4aa1f-b6ba-40ea-8180-dcbca2c2e258",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should return 720 as the result of multiplication of 1-6",
+              "fullTitle": "multiply scenarios should return 720 as the result of multiplication of 1-6",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(calculator.multiply(1, 2, 3, 4, 5, 6)).to.be.equal(720);",
+              "err": {},
+              "uuid": "5eb27fa3-7aba-400c-ad17-81170dd69b3d",
+              "parentUUID": "52b4aa1f-b6ba-40ea-8180-dcbca2c2e258",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return 720 as result of multiplication of (-6)-(-1)",
+              "fullTitle": "multiply scenarios should return 720 as result of multiplication of (-6)-(-1)",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(calculator.multiply(-1, -2, -3, -4, -5, -6)).to.be.equal(720);",
+              "err": {},
+              "uuid": "ec9404c2-7c4d-4581-b5bb-90211e127312",
+              "parentUUID": "52b4aa1f-b6ba-40ea-8180-dcbca2c2e258",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return error if any of parameters is not a number",
+              "fullTitle": "multiply scenarios should return error if any of parameters is not a number",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(function() {\n  calculator.multiply('pug', 2, 3, 4, 5, 6);\n}).to.throw('Is not array of numbers');",
+              "err": {},
+              "uuid": "3b9dcc4e-ba3f-40d3-bdfc-1f3d265f40ca",
+              "parentUUID": "52b4aa1f-b6ba-40ea-8180-dcbca2c2e258",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5eb27fa3-7aba-400c-ad17-81170dd69b3d",
+            "ec9404c2-7c4d-4581-b5bb-90211e127312",
+            "3b9dcc4e-ba3f-40d3-bdfc-1f3d265f40ca"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.0.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
